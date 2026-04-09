@@ -10,6 +10,13 @@ el gateway es el punto de comunicación entre nuestros clientes y nuestros servi
  4. levantar el proyecto con `npm run start:dev`
 
  ## Nats
- ```
+ ```bash
  docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
+ ```
+
+ ## PRODUCCIÓN
+
+ Ejecutar
+ ```bash
+ docker build -f dockerfile.prod -t client-gateway .
  ```
